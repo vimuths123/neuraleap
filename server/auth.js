@@ -18,8 +18,8 @@ export const handler = async () => {
       console.log('Token expired.');
 
       const currentTime = new Date().getTime();
-      // const expirationTime = currentTime + (60 * 60 * 1000 * 12);
-      const expirationTime = currentTime + (1 * 60 * 1000);
+      const expirationTime = currentTime + (60 * 60 * 1000 * 12);
+      // const expirationTime = currentTime + (1 * 60 * 1000);
 
       const options = {
         method: 'POST',
