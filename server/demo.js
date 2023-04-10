@@ -26,6 +26,10 @@ exports.handler = async (event, context) => {
     const phone = decodeURIComponent(params.get('pnumber'));
     const companyName = decodeURIComponent(params.get('cname'));
 
+    console.log('fffffffffffffffffffffff')
+    console.log(tokenData.token)
+    console.log('fffffffffffffffffffffff')
+
     const options1 = {
       method: 'POST',
       url: 'https://services.leadconnectorhq.com/contacts/',
